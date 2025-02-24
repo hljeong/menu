@@ -422,6 +422,9 @@ class Menu:
                             at = clamp(at - 1, self._constraint)
                             v.anchor(at)
 
+                        case "G":
+                            at = clamp(len(self._entries) - 1, self._constraint)
+
                         # c-d
                         case "\x04":
                             at = clamp(at + (v.n + 1) // 2, self._constraint)
